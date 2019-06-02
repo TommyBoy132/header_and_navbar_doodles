@@ -8,6 +8,8 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:600');
 @import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nova+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two:700i&display=swap');
 
 /* ===================================*/
 /* GLOBAL STYLES */
@@ -301,4 +303,32 @@ html, body {
     transition:
             letter-spacing 0.3s;
     text-shadow: 2px 2px #26ff26;
+}
+
+/* ===================================*/
+/* NAVBAR SIX STYLES - Basic identity with tiled pattern */
+
+/*Requires 'Lobster Two' and 'Nova Mono' fonts*/
+/* ===================================*/
+
+.n6-logo-block {
+    padding: 0.4rem 0 0.4rem 0;
+    background-color: rgba(255,255,255,0.3);
+}
+.n6-identity {
+    background-color: darkslategrey;
+    background-image: url("assets/bananas.png");
+    color: #FF7400;
+    font-family: 'Lobster Two', cursive;
+}
+.n6-logo {
+    font-size: 40px;
+    text-align: center;
+}
+.n6-corporate-header {
+    margin-left: 25%;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Nova Mono', monospace;
+
 }
