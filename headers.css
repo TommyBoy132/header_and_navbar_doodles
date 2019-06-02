@@ -1,0 +1,304 @@
+/* ===================================*/
+/* FONTS */
+/* ===================================*/
+@import url('https://fonts.googleapis.com/css?family=Lobster|Playfair+Display+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Trocchi&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:600');
+@import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
+/* ===================================*/
+/* GLOBAL STYLES */
+/* ===================================*/
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.spacer {
+    height: 20vh;
+}
+/* ===================================*/
+/* NAVBAR ONE STYLES - Simple, open navbar flex-wrapped and centred*/
+/* ===================================*/
+.n1-header-branding {
+    background-color: #5C9D2D;
+}
+.n1-logo {
+    font-size: 4.4rem;
+    text-align: center;
+    color: #A12F4D;
+    margin: 0;
+    padding-bottom: .3rem;
+
+}
+.n1-header-nav {
+    background-color: #173700;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.n1-header-nav-item {
+    box-sizing: border-box;
+    color: #80BD54;
+    padding: 0.3rem 1rem;
+    flex: 0 0 auto;
+    text-decoration: none;
+    text-align: center;
+    border-right: 3px solid;
+    border-bottom: 3px solid #173700;
+}
+.n1-header-nav-item:hover {
+    color: #5C9D2D;
+    border-bottom: 3px solid #5C9D2D;
+    border-right: 3px solid #173700;
+}
+
+/* ===================================*/
+/* NAVBAR TWO STYLES - Open navbar composed of floated sections so the text
+    aligns when it breaks multiple lines */
+
+/*Requires 'Playfair Display SC' and 'Lobster' font*/
+/* ===================================*/
+.n2-identity {
+    background-color: #007B6A;
+    text-align: center;
+}
+.n2-logo {
+    display: inline-block;
+    margin: 0;
+    padding: 1rem 0 1.5rem 0;
+    color: #BAF034;
+    font-family: 'Lobster', cursive;
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -o-transform-origin: center center;
+    transform-origin: center center;
+    transform: rotate(-15deg);
+}
+.n2-main-nav {
+    font-family: 'Playfair Display SC', serif;
+}
+.n2-main-nav-item {
+    float: left;
+    box-sizing: border-box;
+    padding: 0.3rem 0.3rem 0.3rem 12px;
+    width: 12.5%;
+    overflow: hidden;
+    text-decoration: none;
+    color: #006456;
+}
+.n2-main-nav-item:hover {
+    color: #00493F;
+    text-decoration: underline;
+}
+.n2-main-nav:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+@media(max-width: 600px){
+    .n2-main-nav-item {
+        width: 25%;
+    }
+}
+@media(max-width: 450px){
+    .n2-main-nav-item {
+        width: 50%;
+    }
+}
+
+/* ===================================*/
+/* NAVBAR THREE STYLES - Open navbar within a width constraint that centres both branding and menu */
+
+/*Requires 'Bungee Shade' and 'Trocchi' fonts*/
+/* ===================================*/
+
+.n3-constraint {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+.n3-constraint:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+.n3-identity {
+    height: 65px;
+    line-height: 65px;
+    background-color: #FF70C4;
+
+}
+.n3-logo {
+    font-size: 44px;
+    margin: 0;
+    padding: 0 0 0 3rem;
+    font-family: 'Bungee Shade', cursive;
+}
+.n3-main-nav {
+    background-color: #D1FF70;
+}
+.n3-main-nav-item {
+    float: left;
+    width: 25%;
+
+}
+.n3-main-nav-link {
+    display: block;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    margin: 0;
+    text-decoration: none;
+    color: #FF0095;
+    font-size: 20px;
+    font-family: 'Trocchi', serif;
+}
+.n3-main-nav-link:hover {
+    text-decoration: underline;
+    color: #D1FF70;
+    background-color: #FF0095;
+}
+.n3-rotate {
+    display: block;
+    width: 100%;
+    transform-origin: center center;
+    transform: rotate(-20deg);
+    transition: all 0.3s;
+}
+.n3-main-nav-link:hover .n3-rotate {
+    transform: rotate(0deg);
+}
+
+/* ===================================*/
+/* NAVBAR FOUR STYLES - Single bar with identity and button nav */
+
+/*Requires 'Roboto Slab' and 'Josefin Sans' fonts*/
+/* ===================================*/
+
+.n4-pipe {
+    height: 0.3rem;
+    background-color: #9AD3F5;
+}
+.n4-menu-item {
+    float: right;
+    width: 8%;
+    margin-right: 0.4rem;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 0.04rem;
+}
+.n4-menu-link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #95F7C5;
+    color: #95F7C5;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+}
+.n4-menu-link:hover {
+    color: #FF9F58;
+    border-color: #FF9F58;
+    background-color: #95F7C5;
+}
+.n4-logo {
+    float: left;
+    padding-top: .2rem;
+    height: 45px;
+    line-height: 40px;
+    font-size: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #F2FEF8;
+}
+.n4-header {
+    padding: 0.6rem 0 0.6rem 0.4rem;
+    line-height: 40px;
+    background-color: #FF9F58;
+}
+.n4-header:after {
+    display: table;
+    content: "";
+    clear: both;
+}
+@media (max-width: 1100px) {
+    .n4-menu-item {
+        width: 15%;
+    }
+}
+@media (max-width: 700px) {
+    .n4-menu-item {
+        display: none;
+    }
+}
+
+/* ===================================*/
+/* NAVBAR FIVE STYLES - Hero header above a flat nav */
+
+/*Requires 'Righteous' and 'Abel' fonts*/
+/* ===================================*/
+
+.n5-hero {
+    height: 40vh;
+    background-image: url("assets/astronomy-backlit-blue-mountains-1434608.jpg");
+    background-position: 100% 50%;
+    background-size: cover;
+    position: relative;
+}
+.n5-logo {
+    color: #FFFA00;
+    font-family: 'Abel', sans-serif;
+    border-top: 4px solid #FFFA00;
+    position: absolute;
+    display: inline-block;
+    top: 25%;
+    right: 140px;
+    font-size: 48px;
+
+}
+.n5-nav-container {
+    display: flex;
+    justify-content: center;
+    background-color: #FFFA00;
+    border-top: 2px solid #A94FE5;
+    border-bottom: 2px solid #A94FE5;
+}
+.n5-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+}
+.n5-nav:after{
+    display: table;
+    content: '';
+    clear: both;
+}
+.n5-nav-item {
+    float: left;
+    text-align: center;
+}
+.n5-nav-link {
+    display: block;
+    padding: 0.3rem 1rem;
+    width: 100%;
+    text-decoration: none;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 0.04rem;
+    color: #A94FE5;
+}
+.n5-nav-link:hover {
+    letter-spacing: 0.08rem;
+    /*text-decoration: underline;*/
+    transition:
+            letter-spacing 0.3s;
+    text-shadow: 2px 2px #26ff26;
+}
